@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{ 
+    background: url(8accb0d1d716949b020c15d1d7978ae1.jpeg)20% / cover no-repeat;
+    height: 100vh;
+}
+#logo img { 
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+#logo{ 
+    width: 30%;
+    margin: 10px;
+}
+#logo2 img { 
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+#logo2{ 
+    position: absolute;
+    width: 30%;
+    top: 25px;
+    left: 25px;
+}
+.fa-bars{
+    position: absolute;
+    right: 10px;
+    top: 25px;
+    font-size: 20px;
+    color: white;
+}
+#menu { 
+    color: #7a4b92;
+    font-weight: 100;
+    text-align: center;
+}
+#menu li{ 
+    padding: 10px;
+    font-size: 1em;
+    margin: 10px;
+}
+button{ 
+    background-color: #7a4b92;
+    color: white;
+    width: 250px;
+    margin: auto;
+    padding: 16px 22px;
+    border: none;
+    border-radius: 25px;
+    margin: 15px 0;
+}
+nav{ 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0;
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    position: fixed;
+    right: -100%;
+    transition: 1s all;
+    overflow-y:scroll;
+}
+#complogos{  display: flex;}
+#complogos li{ 
+    font-size: 20px;
+    border: solid  #7a4b92 1px;
+    border-radius: 50%;
+    margin: 10px;
+}
+#complogos i {
+    padding: 15px;
+}
+#flags {
+    display: flex;
+    justify-content: center;
+}
+#flags li{ 
+    width: 10%;
+    margin: 10px;
+}
+
+#flags li img{ 
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.095);;
+}
+.fa-x{ 
+    position: absolute;
+    color:  #7a4b92;
+    font-size: 20px;
+    right: 20px;
+    top: 20px;
+}
+.fa-arrow-right{
+    rotate: 40deg;
+}
+
+.drop { 
+    top: -100;
+    display: none;
+}
+.block{
+    display: block;
+    transition: 1s;
+}
+a:visited :active{ 
+    text-decoration: none;
+}
+
+@media only screen and (min-width: 768px) {
+    nav { 
+        width: 30%;
+        overflow-y:hidden;
+    }
+    #logo2{  width: 15%;}
+    
+}

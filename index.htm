@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="logo2"><img src="ERATUR-logo-yeni1.png" alt=""></div>
+    <i onclick="show()" class="fa-solid fa-bars"></i>
+        <nav>
+            <i onclick="show()"  class="fa-solid fa-x"></i>
+            <div id="logo"><img src="ERATUR-logo-yeni1.png" alt=""></div>
+            <ul id="menu">
+
+                <li>
+                    <a   href="#" onclick="dropdown(this)">Şirkət <i class="fa-solid fa-arrow-right"></i></a>
+                    <ul class="drop">
+                    <li>Haqqqimizda</li>
+                    <li>Sertifikatlar</li>
+                    <li>Karyera</li>
+                </ul>
+                </li>
+                <li>
+                    <a href="#" onclick="dropdown(this)">Müştəri rəyləri <i class="fa-solid fa-arrow-right"></i></a>
+                    <ul class="drop">
+                        <li>Musteri Fikirleri</li>
+                        <li>Seyahet goruntuleri</li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" onclick="dropdown(this)">Turlar <i class="fa-solid fa-arrow-right"></i></a>
+                    <ul class="drop">
+                        <li>Daxili Turlar</li>
+                        <li>Xarici Turlar</li>
+                        <li>InforTurlar</li>
+                        <li>Insentiv Turlar</li>
+                        <li>Qrup Turlar</li>
+                        <li>Ekskursiyalar</li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Xidmətlər</a>
+                </li>
+                <li>
+                    <a href="#" onclick="dropdown(this)">Emekdasliq<i class="fa-solid fa-arrow-right"></i></a>
+                    <ul class="drop">
+                        <li>Avia Sirketler</li>
+                        <li>Korporativ Emekdasliq</li>
+                    </ul></li>
+                <li><a href="">Azərbaycanı Kəşf Et</a></li>
+                <li><a href="">Əlaqə</a></li>
+            </ul>
+            <button>Qiymət təklifi al</button>
+            <ul id="complogos">
+                <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-youtube"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-linkedin"></i></a></li>
+            </ul>
+            <ul id="flags">
+                <li><img src="az.png" alt=""></li>
+                <li><img src="russianflag.png" alt=""></li>
+                <li><img src="ukFlag.png" alt=""></li>
+            </ul>           
+        </nav>
+        <script>
+            const nav = document.querySelector("nav")
+            let flag = true
+
+            function show() {
+            if (flag) nav.style.right = "0"
+            else nav.style.right = "-100%"
+            flag = !flag    
+        }
+            function dropdown(element){
+                const drop = element.nextElementSibling;
+                drop.classList.toggle('block')
+            }   
+        </script> 
+</body>
+</html>
